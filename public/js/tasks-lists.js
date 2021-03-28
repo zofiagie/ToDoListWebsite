@@ -1,7 +1,6 @@
 if(localStorage.hasOwnProperty('to_do_tasks')) {
 
     const tasks = JSON.parse(localStorage.getItem('to_do_tasks'))
-
     tasks.map((task) => {
 
         const tasks_list = document.getElementById("tasks-list")
@@ -25,7 +24,6 @@ if(localStorage.hasOwnProperty('to_do_tasks')) {
         newTask.appendChild(buttons)   
 
         tasks_list.prepend(newTask)   
-
     })
 
 }
